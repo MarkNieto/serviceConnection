@@ -1,0 +1,365 @@
+/* Variables */
+:root {
+      --primary: #003366;
+      --secondary: #0066cc;
+      --light: #ffffff;
+      --dark: #111111;
+      --gray: #f2f2f2;
+      --highlight: #FFD700;
+    }
+  
+  /* Global styles */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: var(--dark);
+    background-color: var(--light);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  
+  h1, h2, h3 {
+    margin: 0.5em 0;
+  }
+
+  h1 {
+    color: #111111;
+  }
+
+/* Hero */
+    .hero {
+      position: relative;
+      background-image: url('https://images.squarespace-cdn.com/content/v1/64f2a4814b36763623613068/52b2762d-0add-430f-a092-799d357a10c8/AdobeStock_612480775.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: left;
+      padding: 6rem 1rem;
+    }
+
+    .hero__content {
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+
+  /*LOGO NAVBAR*/
+  .logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+  .logo__nav {
+      height: 60px;
+      width: auto;
+      margin-right: 0.5rem;
+    }
+
+  .btn {
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn--primary {
+    color: black;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: normal;
+    transition: all 0.35s ease;
+  }
+
+  .btn--primary:hover{
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFD700;
+
+  } 
+
+
+  .btn--secondary {
+    background-color: var(--secondary);
+  }
+  
+  /* Header */
+  .header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 0;
+  }
+
+/*Navbar dropdows*/
+.dropdown {
+  position: relative;
+}
+
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  background-color: var(--primary);
+  padding: 0.5rem 0;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  z-index: 999;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.dropdown__menu.show {
+  display: block;
+}
+
+.dropdown__menu li {
+  width: 100%;
+}
+
+.dropdown__menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown__menu a:hover {
+  background-color: var(--highlight);
+  color: black;
+}
+
+
+/*End of navbar dropdows*/
+.nav {
+  flex-grow: 1;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  /* Estilos base del enlace */
+.nav__link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+/* Línea inferior animada */
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #FFD700;
+  transition: width 0.3s ease;
+}
+
+/* Hover: texto amarillo + subrayado animado en amarillo */
+
+/*OPCIÓN 1*/
+.nav__link:hover {
+  color: #FFD700;
+}
+
+/*OPCIÓN 2*/
+/*.nav__link:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}*/
+
+
+.nav__link:hover::after {
+  width: 100%;
+}
+/*Botón de hamburguesa oculto en desktop:*/
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav__cta {
+  margin-left: auto;
+}
+
+
+.hero__buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-left: 2rem;
+}
+
+  #title__principal {
+      font-size: 64px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+    }
+
+    #title__principal a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+    }
+
+    #title__principal a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 5px;
+      background-color: var(--highlight);
+      transition: width 0.3s ease;
+    }
+
+    #title__principal a:hover {
+      color: var(--primary);
+    }
+
+    #title__principal a:hover::after {
+      width: 100%;
+    }
+
+  /* Servicios */
+  .services {
+    background-color: var(--gray);
+    padding: 3rem 0;
+  }
+  
+  .services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Proyectos */
+  .projects {
+    padding: 3rem 0;
+  }
+  
+  .projects__grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    flex: 1 1 45%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Sobre Nosotros */
+  .about {
+    background-color: var(--gray);
+    padding: 2rem 0;
+  }
+  
+  /* Testimonios */
+  .testimonials {
+    padding: 2rem 0;
+    background-color: var(--light);
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+
+/*Media@ para movil*/
+  @media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none; /* Oculto por defecto */
+    width: 100%;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav__link,
+  .nav__cta {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 0;
+  }
+  
+      #title__principal {
+        font-size: 36px;
+        padding: 1rem;
+      }
+      .hero__buttons {
+        margin-left: 0;
+      }
+}
