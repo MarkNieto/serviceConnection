@@ -8,50 +8,44 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <!-- Header -->
-  <header class="header">
-    <div class="container header__container">
-      <div class="logo">
-        <img src="src/Service Connection_FF-01.jpg" class="logo__nav" alt="Logo" />
-        <span>Service-Connection</span>
-      </div>
-
-      <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
-
-      <nav class="nav">
-        <ul class="nav__list">
-          <!-- Dropdown: About -->
-          <li class="dropdown">
-            <a href="#" class="nav__link">About</a>
-            <ul class="dropdown__menu">
-              <li><a href="#aboutus" class="nav__link">About Us</a></li>
-              <li><a href="#meettheteam" class="nav__link">Meet the Team</a></li>
-              <li><a href="#testimonies" class="nav__link">Testimonies</a></li>
-            </ul>
-          </li>
-
-          <!-- Dropdown: Repair -->
-          <li class="dropdown">
-            <a href="#" class="nav__link">Repair & Maintenance</a>
-            <ul class="dropdown__menu">
-              <li><a href="#servicios" class="nav__link">Daily Operation</a></li>
-              <li><a href="#facilities" class="nav__link">Facilities</a></li>
-            </ul>
-          </li>
-
-          <!-- CTA Button -->
-          <li><a href="#" class="btn btn--primary nav__cta">Get in touch</a></li>
-        </ul>
-      </nav>
+<!-- Header -->
+<header class="header">
+  <div class="container header__container">
+    <div class="logo">
+      <img src="src/Service Connection_FF1-01.png" class="logo__nav" alt="Logo" />
     </div>
-  </header>
 
+    <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
 
-  <!-- Hero -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="dropdown">
+          <a href="#" class="nav__link">About</a>
+          <ul class="dropdown__menu">
+            <li><a href="#aboutus" class="nav__link link">About Us</a></li>
+            <li><a href="#meettheteam" class="nav__link link">Meet the Team</a></li>
+            <li><a href="#testimonies" class="nav__link link">Testimonies</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav__link">Repair & Maintenance</a>
+          <ul class="dropdown__menu">
+            <li><a href="#daily" class="nav__link link">Daily Operation</a></li>
+            <li><a href="#facilities" class="nav__link link">Facilities</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="btn btn--primary">Get in touch</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
 <section class="hero">
   <div class="container hero__content">
-    <h1 id="title__principal"><a href="#">Commercial property maintenance services.</a></h1>
+    <h1 id="title__principal"><a href="#">Commercial property maintenance services</a></h1>
     <div class="hero__buttons">
       <a href="#proyectos" class="btn btn--secondary">Lorem ipsum</a>
       <a href="#cotizar" class="btn btn--primary">Lorem ipsum</a>
@@ -59,71 +53,200 @@
   </div>
 </section>
 
-  <!-- Servicios -->
-  <section id="servicios" class="services">
-    <div class="container">
-      <h2>Daily operations</h2>
-      <div class="services__grid">
-        <div class="service-card">Repairs & replacements</div>
-        <div class="service-card">Electrical Work</div>
-        <div class="service-card">Plumbing Work</div>
-        <div class="service-card">Door & Handle Reinforcements</div>
-        <div class="service-card">Rough Carpentry</div>
-        <div class="service-card">Fences, gates & metal structures</div>
-        <div class="service-card">Unit Wall Rehab</div>
-        <div class="service-card">Commercial Cleaning and landscaping</div>
+<!-- Servicios -->
+<section id="daily" class="services">
+  <h2 class="section-title">Daily Operations</h2>
+  <div class="services__grid">
+    <div class="service-card enhanced">
+      <div class="service-image" style="background-image: url('src/card1.png');"></div>
+      <div class="service-content">
+        <h3>Repairs & Replacements</h3>
+        <p>From general wear and tear to replacements, we handle it all. As your trusted commercial and industrial maintenance team, we go above and beyond to customize our services according to your specific requirements. Acting as your single point of contact, we streamline the process of managing all repairs and replacements, ensuring a seamless experience for you.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Proyectos -->
-  <section id="proyectos" class="projects">
-    <div class="container">
-      <h2><!--Proyectos Destacados-->Lorem ipsum</h2>
-      <div class="projects__grid">
-        <article class="project-card">
-          <img src="proyecto1.jpg" alt="lorem ipsum">
-          <h3><!--Edificio Moderno-->Lorem ipsum</h3>
-          <p><!--Construcción Comercial-->Lorem ipsum</p>
-        </article>
-        <article class="project-card">
-          <img src="proyecto2.jpg" alt="lorem ipsum">
-          <h3><!--Complejo Residencial-->Lorem ipsum</h3>
-          <p><!--Construcción Residencial-->Lorem ipsum</p>
-        </article>
+    <div class="service-card enhanced">
+      <div class="service-image" style="background-image: url('src/card2.png');"></div>
+      <div class="service-content">
+        <h3>Electrical Work</h3>
+        <p>Even with dedicated facility maintenance technicians, it can be challenging to keep up with daily maintenance needs and attend to unexpected electrical issues. That's where we come in. Our team of experts is here to assist you with all your facility's electrical work requirements, ensuring that your operations run smoothly and efficiently.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Sobre Nosotros -->
-  <section id="nosotros" class="about">
-    <div class="container about__content">
-      <h2><!--Sobre Nosotros-->Lorem ipsum</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus, voluptatem quia perspiciatis aut voluptates iusto perferendis et accusamus molestias facilis ut itaque sed quibusdam aliquid suscipit nam deleniti tempore.
-      </p>
+    <div class="service-card enhanced">
+      <div class="service-image" style="background-image: url('src/card3.png');"></div>
+      <div class="service-content">
+        <h3>Plumbing work</h3>
+        <p>We understand that efficient plumbing is essential for running a commercial facility smoothly. When plumbing problems arise, they need to be addressed promptly to minimize disruptions. Our experienced plumbing service team is ready to tackle any plumbing issues your facility may encounter, providing reliable and efficient solutions to get your building back up and running.</p>
+      </div>
     </div>
-  </section>
-
-  <!-- Testimonios -->
-  <section id="testimonios" class="testimonials">
-    <div class="container testimonials__content">
-      <h2><!--Testimonios-->Lorem ipsum</h2>
-      <blockquote class="testimonial">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iure fugiat ducimus quasi soluta perspiciatis voluptatum odit error eaque, voluptatibus magni, ad aut repellendus itaque dolorem delectus dolore sed odio!</p>
-        <footer>— Lorem ipsum</footer>
-      </blockquote>
+    <div class="service-card enhanced">
+      <div class="service-image" style="background-image: url('src/card4.png');"></div>
+      <div class="service-content">
+        <h3>Door & handle reinforcements</h3>
+        <p>We understand that compromised doors and handles can compromise the security of your facility. That's why our team of skilled maintenance technicians is dedicated to fixing broken doors and damaged handles promptly and efficiently. With our expertise, you can rest assured that your facility will be secure and protected from unexpected incidents.</p>
+      </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; lorem ipsum lorem ipsum lorem ipsum</p>
+    <div class="service-card enhanced">
+      <div class="service-image" style="background-image: url('src/card5.png');"></div>
+      <div class="service-content">
+        <h3>Rough carpentry</h3>
+        <p>Instead of burdening your in-house team with choosing between urgent matters and essential tasks, our services allow them to focus on their core functions. Our experienced professionals are well-equipped to handle all your facility's carpentry needs, providing you with peace of mind and the freedom to concentrate on other important aspects of your business.</p>
+      </div>
     </div>
-  </footer>
+    <div class="service-card enhanced">
+      <div class="service-image" style="background-image: url('src/card6.png');"></div>
+      <div class="service-content">
+        <h3>Fences, gates & metal structures</h3>
+        <p>At Services Connection, we understand the importance of keeping your  properties safe and secure. We offer professional repair and rehab services that are specifically tailored to your needs. Our welding team is ready to take care of compromised structures or simply looking to enhance the overall integrity of your facilities, our team is here to help.</p>
+      </div>
+    </div>
+    <div class="service-card enhanced">
+      <div class="service-image" style="background-image: url('src/card7.png');"></div>
+      <div class="service-content">
+        <h3>Aparment rehab</h3>
+        <p>Here at Service Connection , we offer comprehensive unit wall rehab and repair services. Our qualified facility maintenance technicians will handle everything from repair and replacement to restoration, taking the hassle out of dealing with damaged unit walls. You can trust us to deliver high-quality solutions that meet your specific needs.</p>
+      </div>
+    </div>
+    <div class="service-card enhanced">
+      <div class="service-image" style="background-image: url('src/card8.png');"></div>
+      <div class="service-content">
+        <h3>Commercial cleaning & landscaping</h3>
+        <p>Maintaining a professional appearance and ensuring the smooth operation of commercial and industrial buildings require significant upkeep. However, as any facilities manager knows, accomplishing these goals is easier said than done. That's why we offer top-notch cleaning services for our commercial and industrial clients. Our dedicated team will handle all the necessary cleaning tasks, allowing you to focus on your core business activities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios (deck) -->
+<section id="testimonials" class="testimonials-deck" aria-labelledby="testimonials-title">
+  <div class="container">
+    <h2 id="testimonials-title" class="section-title">What our clients say</h2>
+
+    <div class="deck" role="region" aria-roledescription="carousel" aria-live="polite">
+      <article class="deck-card is-current" aria-label="Testimonial 1 of 4">
+        <header class="deck-head">
+          <img class="deck-avatar" src="https://i.pravatar.cc/88?img=14" alt="Portrait of Sam Carter">
+          <div>
+            <h3 class="deck-name">Sam Carter</h3>
+            <p class="deck-role">Facilities Manager, BlueBay</p>
+          </div>
+        </header>
+        <p class="deck-quote">“Service-Connection became our single point of contact. They coordinate vendors, fix issues fast, and keep us updated—our sites run smoother than ever.”</p>
+        <div class="deck-stars" aria-label="5 out of 5">★★★★★</div>
+      </article>
+
+      <article class="deck-card" aria-label="Testimonial 2 of 4">
+        <header class="deck-head">
+          <img class="deck-avatar" src="https://i.pravatar.cc/88?img=7" alt="Portrait of Laura Kim">
+          <div>
+            <h3 class="deck-name">Laura Kim</h3>
+            <p class="deck-role">Operations Director, NovaPark</p>
+          </div>
+        </header>
+        <p class="deck-quote">“They restored power in hours during a critical outage. Clear communication and zero surprises on the invoice. Gold standard.”</p>
+        <div class="deck-stars" aria-label="5 out of 5">★★★★★</div>
+      </article>
+
+      <article class="deck-card" aria-label="Testimonial 3 of 4">
+        <header class="deck-head">
+          <img class="deck-avatar" src="https://i.pravatar.cc/88?img=26" alt="Portrait of Miguel Torres">
+          <div>
+            <h3 class="deck-name">Miguel Torres</h3>
+            <p class="deck-role">Property Admin, Midtown Towers</p>
+          </div>
+        </header>
+        <p class="deck-quote">“From carpentry rehab to door reinforcements—the quality is consistent and deadlines are met. Our tenants notice the difference.”</p>
+        <div class="deck-stars" aria-label="4.5 out of 5">★★★★☆</div>
+      </article>
+
+      <article class="deck-card" aria-label="Testimonial 4 of 4">
+        <header class="deck-head">
+          <img class="deck-avatar" src="https://i.pravatar.cc/88?img=32" alt="Portrait of Aisha Rahman">
+          <div>
+            <h3 class="deck-name">Aisha Rahman</h3>
+            <p class="deck-role">Logistics Hub Lead</p>
+          </div>
+        </header>
+        <p class="deck-quote">“Plumbing and landscaping on schedule, every time. They leave each site in better shape than they found it.”</p>
+        <div class="deck-stars" aria-label="5 out of 5">★★★★★</div>
+      </article>
+
+      <!-- Controles -->
+      <button class="deck-btn deck-prev" aria-label="Previous testimonial">‹</button>
+      <button class="deck-btn deck-next" aria-label="Next testimonial">›</button>
+
+      <!-- Dots -->
+      <div class="deck-dots" role="tablist" aria-label="Testimonials navigation">
+        <button class="deck-dot is-active" role="tab" aria-selected="true" aria-controls="deck-1"></button>
+        <button class="deck-dot" role="tab" aria-selected="false" aria-controls="deck-2"></button>
+        <button class="deck-dot" role="tab" aria-selected="false" aria-controls="deck-3"></button>
+        <button class="deck-dot" role="tab" aria-selected="false" aria-controls="deck-4"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="site-footer__top">
+    <div class="container site-footer__grid">
+      <div class="sf-brand">
+        <img src="src/Service Connection_FF1-01.png" alt="Service-Connection logo" class="sf-logo"/>
+        <p class="sf-tagline">Solidez y compromiso en cada servicio.</p>
+        <div class="sf-social">
+          <a href="#" aria-label="LinkedIn" class="sf-social__link">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5A1.94 1.94 0 1 1 5 4.56A1.94 1.94 0 0 1 6.94 6.5M7 8H5v11h2zm4 .06H9v10.94h2V13.5c0-2.48 3-2.68 3 0V19h2v-6.17c0-4.06-4.5-3.91-5-1.91z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="sf-social__link">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12.06A10 10 0 1 0 10 22v-7H7v-3h3v-2.3C10 7.5 11.64 6 14.2 6c1.03 0 1.92.08 2.18.11v2.53h-1.5c-1.18 0-1.4.56-1.4 1.38V12h2.8l-.37 3h-2.43v7A10 10 0 0 0 22 12.06"/></svg>
+          </a>
+          <a href="#" aria-label="X" class="sf-social__link">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h3.5l5 7l5-7H20l-6.75 9.45L20.5 21H17l-5-6.9L7 21H3.5l6.25-8.55z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="sf-links">
+        <h4>Company</h4>
+        <a href="#aboutus">About us</a>
+        <a href="#meettheteam">Team</a>
+        <a href="#testimonies">Testimonials</a>
+        <a href="#">Careers</a>
+      </nav>
+
+      <nav class="sf-links">
+        <h4>Services</h4>
+        <a href="#daily">Daily operations</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#">Emergency</a>
+        <a href="#">Consulting</a>
+      </nav>
+
+      <div class="sf-contact">
+        <h4>Get in touch</h4>
+        <p>Email: contact@service-connection.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+
+        <form class="sf-form" action="#" onsubmit="return false;">
+          <label for="sf-email" class="sr-only">Email</label>
+          <input id="sf-email" type="email" placeholder="Your email" required>
+          <button class="btn btn--primary sf-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <div class="container sf-bottom__wrap">
+      <span>© 2025 Service-Connection. All rights reserved.</span>
+      <div class="sf-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script src="main.js"></script>
-
 </body>
 </html>
