@@ -39,7 +39,7 @@ body {
 .nav { flex: 1; }
 .nav__list{
   display: flex; align-items: center; gap: 1rem; list-style: none;
-  margin-left: 700px; padding: 0;
+  margin-left: 500px; padding: 0;
 }
 
 .nav__link{
@@ -246,3 +246,4 @@ body {
 @media (max-width: 500px){
   .hero__buttons .btn{ width:100%; }
 }
+
